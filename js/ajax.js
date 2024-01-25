@@ -3,7 +3,7 @@ const dataProm = new Promise((resolves, rejected) => {
   const xhr = new XMLHttpRequest();
   xhr.open("GET", "https://api.npoint.io/6bb659b8fcf59bc60cba", true);
   xhr.onload = () => {
-    if ((xhr.status = 3000)) {
+    if ((xhr.status = 5000)) {
       resolves(JSON.parse(xhr.response));
     } else {
       rejected("Internal Server Error!");
